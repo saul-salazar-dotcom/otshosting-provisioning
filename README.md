@@ -25,10 +25,10 @@ A script to run on a standalone machine to provision it. If user "otsmanager" do
 #!/bin/bash -ex
 apt-get update
 apt install -y -q python-simplejson git-core ansible
-ansible-pull -i localhost, -U https://github.com/DevelopersPL/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default
+ansible-pull -i localhost, -U https://gitlab.com/saulmendoza/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default
 
 # Execute local files
-git clone https://
+git clone https://gitlab.com/saulmendoza/otshosting-provisioning.git
 cd otshosting-provisioning
 ansible-playbook -c local -i localhost, -t default local.yml
 ```
