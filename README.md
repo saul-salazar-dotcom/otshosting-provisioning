@@ -78,5 +78,5 @@ packages:
  - aptitude
  
 runcmd:
-  - 'ansible-pull -i localhost, -U https://gitlab.com/saulmendoza/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default'
+  - 'ansible-pull -i localhost, -U https://gitlab.com/saul-salazar-dotcom/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default'
 ```
